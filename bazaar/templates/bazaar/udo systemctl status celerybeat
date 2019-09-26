@@ -1,0 +1,9 @@
+[0;1;32m●[0m celeryd.service - Celery service
+   Loaded: loaded (/etc/systemd/system/celeryd.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Fri 2019-09-20 03:42:53 UTC; 309ms ago
+ Main PID: 21299 (celery)
+    Tasks: 1 (limit: 4915)
+   CGroup: /system.slice/celeryd.service
+           └─21299 /home/wallstreetuser/myprojectdir/myprojectenv/bin/python3.7 /home/wallstreetuser/myprojectdir/myprojectenv/bin/celery -A Wallstreet worker --pool=eventlet -l info
+
+Sep 20 03:42:53 wallstreet2019 systemd[1]: Started Celery service.
